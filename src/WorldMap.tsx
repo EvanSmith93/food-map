@@ -1,11 +1,5 @@
 import React, { useState } from "react";
-import {
-  MapContainer,
-  TileLayer,
-  Marker,
-  Popup,
-  useMapEvents,
-} from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 
@@ -20,67 +14,95 @@ const DefaultIcon = L.icon({
 });
 L.Marker.prototype.options.icon = DefaultIcon;
 
-
 interface Pin {
   id: string;
   position: [number, number];
+  title: string;
   content: string;
 }
 
 const WorldMap: React.FC = () => {
-  const [pins, setPins] = useState<Pin[]>([
-    { id: "1", position: [40.7128, -74.006], content: "New York City" },
-    { id: "2", position: [35.6895, 139.6917], content: "Tokyo" },
+  const [pins] = useState<Pin[]>([
+    {
+      id: "1",
+      position: [41.9028, 12.4964], // Rome, Italy
+      title: "Italy - Pasta",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.",
+    },
+    {
+      id: "2",
+      position: [35.6895, 139.6917], // Tokyo, Japan
+      title: "Japan - Rice",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.",
+    },
+    {
+      id: "3",
+      position: [20.5937, 78.9629], // India
+      title: "India - Rice and Roti",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.",
+    },
+    {
+      id: "4",
+      position: [23.6345, -102.5528], // Mexico
+      title: "Mexico - Corn",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.",
+    },
+    {
+      id: "5",
+      position: [48.8566, 2.3522], // Paris, France
+      title: "France - Bread",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.",
+    },
+    {
+      id: "6",
+      position: [37.5665, 126.978], // Seoul, South Korea
+      title: "South Korea - Kimchi and Rice",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.",
+    },
+    {
+      id: "7",
+      position: [-14.235, -51.9253], // Brazil
+      title: "Brazil - Rice and Beans",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.",
+    },
+    {
+      id: "8",
+      position: [15.87, 100.9925], // Thailand
+      title: "Thailand - Rice and Noodles",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.",
+    },
+    {
+      id: "9",
+      position: [31.7917, -7.0926], // Morocco
+      title: "Morocco - Couscous",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.",
+    },
   ]);
-
-  const addPin = (latlng: [number, number]) => {
-    const newPin: Pin = {
-      id: Date.now().toString(),
-      position: latlng,
-      content: "New Pin",
-    };
-    setPins((prevPins) => [...prevPins, newPin]);
-  };
-
-  // Component to handle map clicks
-  const MapClickHandler = () => {
-    useMapEvents({
-      click(e) {
-        addPin([e.latlng.lat, e.latlng.lng]);
-      },
-    });
-    return null;
-  };
 
   return (
     <MapContainer
       center={[20, 0]}
       zoom={2}
       style={{ height: "500px", width: "100%" }}
-      className="rounded-lg shadow-md"
     >
       <TileLayer
         url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
         attribution="© OpenStreetMap contributors © CartoDB"
       />
-      <MapClickHandler />
       {pins.map((pin) => (
         <Marker key={pin.id} position={pin.position}>
           <Popup>
-            <div>
-              <h4>{pin.content}</h4>
-              <button
-                onClick={(e) => {
-                  setPins((prevPins) =>
-                    prevPins.filter((p) => p.id !== pin.id)
-                  );
-                  e.stopPropagation();
-                }}
-                className="text-red-500 hover:text-red-700"
-              >
-                Delete Pin
-              </button>
-            </div>
+            <h3>{pin.title}</h3>
+            <p>{pin.content}</p>
           </Popup>
         </Marker>
       ))}
