@@ -1,6 +1,14 @@
 import { useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import { Grid, Paper, Stack, Checkbox, Title, Text } from "@mantine/core";
+import {
+  Grid,
+  Paper,
+  Stack,
+  Checkbox,
+  Title,
+  Text,
+  Button,
+} from "@mantine/core";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import { pinData } from "./data";
@@ -29,11 +37,19 @@ const SelectedList = ({
   selected: string[];
   pins: Pin[];
 }) => (
-  <Paper p="md" shadow="sm" style={{ height: "500px", overflowY: "auto" }}>
+  <Paper
+    p="md"
+    shadow="sm"
+    style={{
+      height: "500px",
+      display: "flex",
+      flexDirection: "column",
+    }}
+  >
     <Title order={3} mb="md">
-      Selected Foods
+      Recipes to Combine
     </Title>
-    <Stack gap="sm">
+    <Stack gap="sm" style={{ flexGrow: 1, overflowY: "auto" }}>
       {pins
         .filter((pin) => selected.includes(pin.id))
         .map((pin) => (
@@ -42,6 +58,9 @@ const SelectedList = ({
           </Paper>
         ))}
     </Stack>
+    <Button mt="md" variant="filled" fullWidth disabled={selected.length < 2}>
+      Combine
+    </Button>
   </Paper>
 );
 
@@ -79,7 +98,7 @@ const WorldMap = () => {
                   <Title order={4}>{pin.title}</Title>
                   <Text size="sm">{pin.content}</Text>
                   <Checkbox
-                    label="Include in list"
+                    label="Add to List"
                     checked={selectedIds.includes(pin.id)}
                     onChange={(e) =>
                       handleSelect(pin.id)(e.currentTarget.checked)
