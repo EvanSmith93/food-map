@@ -12,22 +12,16 @@ function App() {
           Food Globalization Map
         </Title>
         <Text mb="sm">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-          per conubia nostra inceptos himenaeos.
+          This website contains a collection of a collection of recipes from around the world, with a focus on plant-based recipes.
+          Click on each pin to view the recipe and a bit of history about that food.
         </Text>
         <Text mb="sm">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-          per conubia nostra inceptos himenaeos.
+          Over the past several hundred years, the world has become increasingly globalized.
+          More communication and travel between areas of the world means cultures mix.
+          In globalization, people take the food they know and combine it with foods they discover from other places to make new foods or cuisines.
+          This website allows you to do the same.
+          Select one or more recipes and combine them with other ingredients you choose to create a whole new recipe with AI.
+          Note: the generated recipes themselves are not historically accurate. However, the process of combining ingredients to create something new is common practice during globalization.
         </Text>
         <WorldMap />
       </div>
