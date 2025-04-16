@@ -27,13 +27,19 @@ export const pinData = [
     content:
       "Gather hickory nuts or scalybarks, dry on a rack before the fire. When the nuts are dry crack them by using a large flat rock placed in a flat basket lined temporarily with a cloth, use a smaller rock to pound the nuts when placed on the larger rock. When the nuts are all cracked sieve them through a sieve basket. Place the kernels and small hulls that passed through the sieve in the corn beater and pound until the substance can be made into balls. Roll this into balls until ready for use. These balls will keep fresh for several days if the weather is not too warm. When ready for Hickory Nut Soup place a ball or more in a vessel that will hold water, pour boiling water over the balls while stirring constantly. If this is made into a thick soup it may be served with any type bread or dumpling. If it is made into a thin soup it may be used as a drink. As soon as enough soup has been poured off to leave a very thick mixture more water may be added. Do not drink the very last of the mixture because that is where the little bits of hulls are.",
   },
-  // {
-  //   id: "4",
-  //   position: [23.6345, -102.5528], // Mexico
-  //   title: "Mexico - Corn",
-  //   content:
-  //     "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.",
-  // },
+  {
+    id: "5",
+    position: [45.800666, 9.090792], // Northern Italy
+    title: "Almond Milk Rice",
+    content: `For ten portions, use one pound of almonds and clean them well so that they are white.
+Then take one pound of rice, and wash it two or three times with lukewarm water, and boil it
+with some clean water until it is well cooked. Then you drain it and place it out to dry. Then
+mash the almonds well, wetting them with some fresh water every now and then, so that
+they won’t get too oily; then cover them with water and pass them through a masher. Now
+boil this milk in a casserole with one pound of refined sugar. And when it starts to boil add
+the rice and move the casserole over embers, far away from the fire, stirring continuously
+with the spoon to prevent burning. It should boil for about half a hour.`,
+  },
   // {
   //   id: "5",
   //   position: [48.8566, 2.3522], // Paris, France

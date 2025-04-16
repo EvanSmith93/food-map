@@ -41,7 +41,7 @@ const SelectedList = ({
     p="md"
     shadow="sm"
     style={{
-      height: "500px",
+      height: "100%",
       display: "flex",
       flexDirection: "column",
     }}
@@ -84,7 +84,7 @@ const WorldMap = () => {
         <MapContainer
           center={[20, 0]}
           zoom={2}
-          style={{ height: "500px", width: "100%" }}
+          style={{ height: "750px", width: "100%" }}
         >
           <TileLayer
             url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
