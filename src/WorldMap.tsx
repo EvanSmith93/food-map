@@ -1,6 +1,14 @@
 import { ReactNode, useState } from "react";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import { Grid, Paper, Stack, Checkbox, Title, Button } from "@mantine/core";
+import { MapContainer, TileLayer, Marker } from "react-leaflet";
+import {
+  Grid,
+  Paper,
+  Stack,
+  Checkbox,
+  Title,
+  Button,
+  Modal,
+} from "@mantine/core";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import { pinData } from "./data.tsx";
@@ -59,6 +67,7 @@ const SelectedList = ({
 const WorldMap = () => {
   const [selectedIds, setSelectedIds] = useState<string[]>([]);
   const [pins] = useState<Pin[]>(pinData);
+  const [openedPin, setOpenedPin] = useState<Pin | null>(null);
 
   const handleSelect = (id: string) => (checked: boolean) => {
     setSelectedIds((current) =>
@@ -67,42 +76,57 @@ const WorldMap = () => {
   };
 
   return (
-    <Grid gutter="md">
-      <Grid.Col span={3}>
-        <SelectedList selected={selectedIds} pins={pins} />
-      </Grid.Col>
+    <>
+      <Grid gutter="md">
+        <Grid.Col span={3}>
+          <SelectedList selected={selectedIds} pins={pins} />
+        </Grid.Col>
 
-      <Grid.Col span={9}>
-        <MapContainer
-          center={[20, 0]}
-          zoom={2}
-          style={{ height: "750px", width: "100%" }}
-        >
-          <TileLayer
-            url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
-            attribution="© OpenStreetMap contributors © CartoDB"
-          />
+        <Grid.Col span={9}>
+          <MapContainer
+            center={[20, 0]}
+            zoom={2}
+            style={{ height: "750px", width: "100%", zIndex: 0 }}
+          >
+            <TileLayer
+              url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
+              attribution="© OpenStreetMap contributors © CartoDB"
+            />
 
-          {pins.map((pin) => (
-            <Marker key={pin.id} position={pin.position}>
-              <Popup minWidth={450}>
-                <Stack gap="xs">
-                  <Title order={4}>{pin.title}</Title>
-                  {pin.content}
-                  <Checkbox
-                    label="Add to List"
-                    checked={selectedIds.includes(pin.id)}
-                    onChange={(e) =>
-                      handleSelect(pin.id)(e.currentTarget.checked)
-                    }
-                  />
-                </Stack>
-              </Popup>
-            </Marker>
-          ))}
-        </MapContainer>
-      </Grid.Col>
-    </Grid>
+            {pins.map((pin) => (
+              <Marker
+                key={pin.id}
+                position={pin.position}
+                eventHandlers={{
+                  click: () => setOpenedPin(pin),
+                }}
+              />
+            ))}
+          </MapContainer>
+        </Grid.Col>
+      </Grid>
+
+      <Modal
+        opened={openedPin !== null}
+        onClose={() => setOpenedPin(null)}
+        title={openedPin?.title}
+        size="lg"
+        centered
+      >
+        {openedPin && (
+          <Stack>
+            {openedPin.content}
+            <Checkbox
+              label="Add to List"
+              checked={selectedIds.includes(openedPin.id)}
+              onChange={(e) =>
+                handleSelect(openedPin.id)(e.currentTarget.checked)
+              }
+            />
+          </Stack>
+        )}
+      </Modal>
+    </>
   );
 };
 
