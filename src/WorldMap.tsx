@@ -1,17 +1,9 @@
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import {
-  Grid,
-  Paper,
-  Stack,
-  Checkbox,
-  Title,
-  Text,
-  Button,
-} from "@mantine/core";
+import { Grid, Paper, Stack, Checkbox, Title, Button } from "@mantine/core";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
-import { pinData } from "./data";
+import { pinData } from "./data.tsx";
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
 
@@ -27,7 +19,7 @@ export interface Pin {
   id: string;
   position: [number, number];
   title: string;
-  content: string;
+  content: ReactNode;
 }
 
 const SelectedList = ({
@@ -93,10 +85,10 @@ const WorldMap = () => {
 
           {pins.map((pin) => (
             <Marker key={pin.id} position={pin.position}>
-              <Popup>
+              <Popup minWidth={450}>
                 <Stack gap="xs">
                   <Title order={4}>{pin.title}</Title>
-                  <Text size="sm">{pin.content}</Text>
+                  {pin.content}
                   <Checkbox
                     label="Add to List"
                     checked={selectedIds.includes(pin.id)}
