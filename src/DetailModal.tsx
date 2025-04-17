@@ -1,6 +1,7 @@
-import { Button, Input, Modal, Stack } from "@mantine/core";
+import { Badge, Button, Flex, Input, Modal, Stack } from "@mantine/core";
 import { Pin } from "./WorldMap";
 import { useState } from "react";
+import { Calendar, Map } from "lucide-react";
 
 const DetailModal = ({
   openedPin,
@@ -21,21 +22,23 @@ const DetailModal = ({
       <Modal
         opened={openedPin !== null && !aiModal}
         onClose={onClose}
-        title={openedPin?.title}
+        title={openedPin?.data.title}
         size="lg"
         centered
       >
-        {openedPin && (
-          <Stack>
-            {openedPin.content}
-            <Button onClick={() => setAiModal(true)}>Remix</Button>
-          </Stack>
-        )}
+        <Stack>
+          <Flex gap={8}>
+            <Badge leftSection={<Map size={14} />}>{openedPin?.data.location}</Badge>
+            <Badge leftSection={<Calendar size={14} />}>{openedPin?.data.year}</Badge>
+          </Flex>
+          {openedPin?.data.content}
+          <Button onClick={() => setAiModal(true)}>Remix</Button>
+        </Stack>
       </Modal>
       <Modal
         opened={aiModal}
         onClose={onClose}
-        title={`Remix ${openedPin?.title}`}
+        title={`Remix ${openedPin?.data.title}`}
         size="lg"
         centered
       >

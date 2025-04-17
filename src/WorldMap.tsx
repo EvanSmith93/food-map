@@ -16,11 +16,17 @@ const DefaultIcon = L.icon({
 });
 L.Marker.prototype.options.icon = DefaultIcon;
 
+export interface RecipeData {
+  title: string;
+  year: string;
+  location: string;
+  content: ReactNode;
+}
+
 export interface Pin {
   id: string;
   position: [number, number];
-  title: string;
-  content: ReactNode;
+  data: RecipeData;
 }
 
 const WorldMap = () => {
