@@ -40,39 +40,56 @@ boil this milk in a casserole with one pound of refined sugar. And when it start
 the rice and move the casserole over embers, far away from the fire, stirring continuously
 with the spoon to prevent burning. It should boil for about half a hour.`,
   },
-  // {
-  //   id: "5",
-  //   position: [48.8566, 2.3522], // Paris, France
-  //   title: "France - Bread",
-  //   content:
-  //     "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.",
-  // },
-  // {
-  //   id: "6",
-  //   position: [37.5665, 126.978], // Seoul, South Korea
-  //   title: "South Korea - Kimchi and Rice",
-  //   content:
-  //     "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.",
-  // },
-  // {
-  //   id: "7",
-  //   position: [-14.235, -51.9253], // Brazil
-  //   title: "Brazil - Rice and Beans",
-  //   content:
-  //     "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.",
-  // },
-  // {
-  //   id: "8",
-  //   position: [15.87, 100.9925], // Thailand
-  //   title: "Thailand - Rice and Noodles",
-  //   content:
-  //     "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.",
-  // },
-  // {
-  //   id: "9",
-  //   position: [31.7917, -7.0926], // Morocco
-  //   title: "Morocco - Couscous",
-  //   content:
-  //     "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.",
-  // },
+  {
+    id: "6",
+    position: [8.378948, -78.902336], // Panama Bay
+    title: "Guacamole",
+    content: `This fruit has no taste of itself, and therefore it is usually mixed with sugar and lime-juice and beaten together in a plate; and this is an excellent dish. The ordinary way is to eat it with a little salt and a roasted plantain; and thus a man that's hungry may make a good meal of it.`,
+  },
+  {
+    id: "7",
+    position: [9.034475, 7.481819], // Nigeria
+    title: "Groundnut Soup",
+    content: `1 pint of stock. 2 teaspoon salt.
+1 teacup ground nut. pinch pepper.
+Any stock from fowl or button broth or beef soup or
+even water left from vegetable soup can be used for a
+ground nut soup, or some stock made quickly with Lemeo
+or Maggi.
+1. Roast and peel the ground nuts and pound them to
+& paste in a native mortar if you have no proper kitchen
+one, mix them with a teacup of water. This makes a paste
+that you mix with the hot stock and let it boil for a
+quarter of an hour. Serve with little squares of fried bread.
+A teaspoon of vermouth can be added to each soup
+plate at table if liked, or a few drops of sherry and pepper.`,
+  },
+  {
+    id: "8",
+    position: [53.111003, -7.625578], // Ireland
+    title: "Potato Pie",
+    content: `Take 2 dozen of potatoes boyle them till they will
+peele, then slit them, being peeled in the middle,
+then raise your pie, and take 2 pound of butter, and
+wash it in rose water, and worke it in your hands,
+then lay it in a thin cake all over the bottom of your
+pie, then season your potatoes, with half a pound of
+fine shugar, 2 spoonfulls of cinamon, a little sault
+place in your pie not to close for you must put
+between them, a pound a half of yolks of eggs
+boyled hard and cut in halves, then take 2 ounces of
+candied oring 2 ounces citron sliced very thin, and
+stick them in the potatoes, then lay a pound of sweet
+butter in the same maner as before all over the
+potatoes, close it up and bake it in a gentle oven half
+an hour before it is baked, draw it and putt in this
+Caudle, half a pint of navgis, half a pint of white
+wine, when it boyles take it from the fire and have a
+dozen yolks of eggs, and 6 whites ready beaten, stir
+them in, putting there to half a pound of butter & a
+quarter of a pound of shugar stirring them together
+they bee thick then putt it into the pie and set it in
+the oven tother half hour and scrap hard shugar
+over it and so serve it.`,
+  },
 ] satisfies Pin[];
