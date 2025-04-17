@@ -69,7 +69,7 @@ const WorldMap = () => {
   const [pins] = useState<Pin[]>(pinData);
   const [openedPin, setOpenedPin] = useState<Pin | null>(null);
 
-  const handleSelect = (id: string) => (checked: boolean) => {
+  const handleSelect = (id: string, checked: boolean) => {
     setSelectedIds((current) =>
       checked ? [...current, id] : current.filter((item) => item !== id)
     );
@@ -120,7 +120,7 @@ const WorldMap = () => {
               label="Add to List"
               checked={selectedIds.includes(openedPin.id)}
               onChange={(e) =>
-                handleSelect(openedPin.id)(e.currentTarget.checked)
+                handleSelect(openedPin.id, e.currentTarget.checked)
               }
             />
           </Stack>
