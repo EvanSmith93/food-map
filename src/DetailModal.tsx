@@ -45,6 +45,11 @@ const DetailModal = ({
             {openedPin?.data.year}
           </Badge>
         </Flex>
+        <Flex gap={4} wrap='wrap'>
+          {openedPin?.data.ingredients.map((ingredient) => (
+            <Badge size="sm" color="green">{ingredient}</Badge>
+          ))}
+        </Flex>
 
         <Blockquote>{openedPin?.data.content.recipe}</Blockquote>
         <Text size="sm">{openedPin?.data.content.description}</Text>

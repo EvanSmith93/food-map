@@ -8,6 +8,27 @@ export const pinData: Pin[] = [
       title: "Hummus",
       year: "1200s",
       location: "Middle East",
+      ingredients: [
+        "chickpeas",
+        "vinegar",
+        "oil",
+        "tahineh",
+        "pepper",
+        "aṭrāf ṭīb",
+        "mint",
+        "parsley",
+        "refuse of dry thyme",
+        "walnuts",
+        "hazelnuts",
+        "almonds",
+        "pistachios",
+        "Ceylon cinnamon",
+        "toasted caraway",
+        "dry coriander",
+        "salt",
+        "salted lemons",
+        "olives",
+      ],
       content: {
         description: "TODO: write",
         recipe: `Take chickpeas and pound them fine after boiling them. Then take
@@ -25,6 +46,15 @@ export const pinData: Pin[] = [
       title: "Udon noodles",
       year: "1643",
       location: "Japan",
+      ingredients: [
+        "flour",
+        "salt",
+        "water",
+        "ninuki",
+        "taremiso",
+        "black pepper",
+        "ume",
+      ],
       content: {
         description: "TODO: write",
         recipe: `Beat the flour as much as is necessary. For salt seasoning, put 1 shō
@@ -46,6 +76,7 @@ export const pinData: Pin[] = [
       title: "Kneaded Bread",
       year: "160 BCE",
       location: "Italy",
+      ingredients: ["meal", "water"],
       content: {
         description: "TODO: write",
         recipe: `Wash your hands and a bowl thoroughly. Pour meal into the bowl, add
@@ -61,6 +92,7 @@ export const pinData: Pin[] = [
       title: "Kanuchi",
       year: "1951",
       location: "Cherokee Territory",
+      ingredients: ["hickory nuts", "scalybarks", "water", "bread", "dumpling"],
       content: {
         description: "TODO: write",
         recipe: `Gather hickory nuts or scalybarks, dry on a rack before the fire. When
@@ -89,6 +121,7 @@ export const pinData: Pin[] = [
       title: "Almond Milk Rice",
       year: "1470",
       location: "Northern Italy",
+      ingredients: ["almonds", "rice", "water", "refined sugar"],
       content: {
         description: "TODO: write",
         recipe: `For ten portions, use one pound of almonds and clean them well so that
@@ -112,6 +145,13 @@ export const pinData: Pin[] = [
       title: "Guacamole",
       year: "1697",
       location: "Panama Bay",
+      ingredients: [
+        "avocado",
+        "sugar",
+        "lime-juice",
+        "salt",
+        "roasted plantain",
+      ],
       content: {
         description: "TODO: write",
         recipe: `This fruit has no taste of itself, and therefore it is usually mixed
@@ -129,6 +169,15 @@ export const pinData: Pin[] = [
       title: "Groundnut Soup",
       year: "1910",
       location: "Nigeria",
+      ingredients: [
+        "stock",
+        "salt",
+        "ground nut",
+        "pepper",
+        "vermouth",
+        "sherry",
+        "fried bread",
+      ],
       content: {
         description: "TODO: write",
         recipe: `1 pint of stock. 2 teaspoon salt. 1 teacup ground nut. pinch pepper.
@@ -151,6 +200,21 @@ export const pinData: Pin[] = [
       title: "Potato Pie",
       year: "1700",
       location: "Ireland",
+      ingredients: [
+        "potatoes",
+        "butter",
+        "rose water",
+        "sugar",
+        "cinamon",
+        "salt",
+        "egg yolks",
+        "candied oring",
+        "citron",
+        "navgis",
+        "white wine",
+        "egg whites",
+        "hard sugar",
+      ],
       content: {
         description: "TODO: write",
         recipe: `Take 2 dozen of potatoes boyle them till they will peele, then slit

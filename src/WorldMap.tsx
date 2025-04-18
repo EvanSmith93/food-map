@@ -3,7 +3,7 @@ import { MapContainer, TileLayer, Marker } from "react-leaflet";
 import { Grid } from "@mantine/core";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
-import { pinData } from "./data.tsx";
+import { pinData } from "./data.ts";
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import DetailModal from "./DetailModal.tsx";
@@ -20,6 +20,7 @@ export interface RecipeData {
   title: string;
   year: string;
   location: string;
+  ingredients: string[];
   content: {
     recipe: string;
     description: string;
