@@ -38,16 +38,18 @@ const DetailModal = ({
     >
       <Stack>
         <Flex gap={8}>
-          <Badge leftSection={<Map size={14} />}>
+          <Badge size="lg" leftSection={<Map size={14} />}>
             {openedPin?.data.location}
           </Badge>
-          <Badge leftSection={<Calendar size={14} />}>
+          <Badge size="lg" leftSection={<Calendar size={14} />}>
             {openedPin?.data.year}
           </Badge>
         </Flex>
-        <Flex gap={4} wrap='wrap'>
+        <Flex gap={4} wrap="wrap">
           {openedPin?.data.ingredients.map((ingredient) => (
-            <Badge size="sm" color="green">{ingredient}</Badge>
+            <Badge size="sm" color="green">
+              {ingredient}
+            </Badge>
           ))}
         </Flex>
 
