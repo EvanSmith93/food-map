@@ -47,7 +47,7 @@ export const pinData = [
     position: [41.798333, 12.710833],
     data: {
       title: "Kneaded Bread",
-      year: "Unknown",
+      year: "160 BCE",
       location: "Italy",
       content: (
         <Text size="sm">
@@ -63,7 +63,7 @@ export const pinData = [
     position: [35.97653594, -83.923713929],
     data: {
       title: "Kanuchi",
-      year: "Unknown",
+      year: "1951",
       location: "Cherokee Territory",
       content: (
         <Text size="sm">
@@ -92,7 +92,7 @@ export const pinData = [
     position: [45.800666, 9.090792],
     data: {
       title: "Almond Milk Rice",
-      year: "Unknown",
+      year: "1470",
       location: "Northern Italy",
       content: (
         <Text size="sm">
@@ -116,7 +116,7 @@ export const pinData = [
     position: [8.378948, -78.902336],
     data: {
       title: "Guacamole",
-      year: "1937",
+      year: "1697",
       location: "Panama Bay",
       content: (
         <Text size="sm">
@@ -157,7 +157,7 @@ export const pinData = [
     position: [53.111003, -7.625578],
     data: {
       title: "Potato Pie",
-      year: "Unknown",
+      year: "1700",
       location: "Ireland",
       content: (
         <Text size="sm">
