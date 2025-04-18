@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Badge,
   Blockquote,
@@ -26,6 +27,22 @@ const DetailModal = ({
 
   const onClose = () => {
     setOpenedPin(null);
+  };
+
+  const onCreate = async () => {
+    const res = await fetch("http://localhost:3001/api/recipe", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        recipe: openedPin?.data.content.recipe,
+        ingredients: customIngredients,
+      }),
+    });
+    const data = await res.json();
+
+    console.log(data.text);
   };
 
   return (
@@ -79,7 +96,7 @@ const DetailModal = ({
           </Grid.Col>
           <Grid.Col span={3}>
             <Button
-              onClick={() => null}
+              onClick={onCreate}
               leftSection={<Sparkles size={14} />}
               disabled={customIngredients.length === 0}
               fullWidth
