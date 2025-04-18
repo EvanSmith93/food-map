@@ -1,4 +1,4 @@
-import { ReactNode, useState } from "react";
+import { useState } from "react";
 import { MapContainer, TileLayer, Marker } from "react-leaflet";
 import { Grid } from "@mantine/core";
 import "leaflet/dist/leaflet.css";
@@ -20,7 +20,10 @@ export interface RecipeData {
   title: string;
   year: string;
   location: string;
-  content: ReactNode;
+  content: {
+    recipe: string;
+    description: string;
+  };
 }
 
 export interface Pin {

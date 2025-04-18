@@ -1,7 +1,6 @@
-import { Text } from "@mantine/core";
 import { Pin } from "./WorldMap";
 
-export const pinData = [
+export const pinData: Pin[] = [
   {
     id: "1",
     position: [32.2986, 35.992251],
@@ -9,15 +8,14 @@ export const pinData = [
       title: "Hummus",
       year: "1200s",
       location: "Middle East",
-      content: (
-        <Text size="sm">
-          Take chickpeas and pound them fine after boiling them. Then take
+      content: {
+        description: "TODO: write",
+        recipe: `Take chickpeas and pound them fine after boiling them. Then take
           vinegar, oil, tahineh, pepper, aṭrāf ṭīb, mint, parsley, the refuse of
           dry thyme, walnuts, hazelnuts, almonds, pistachios, Ceylon cinnamon,
           toasted caraway, dry coriander, salt, salted lemons and olives. Stir
-          it and roll it out flat and leave it overnight and take it up.
-        </Text>
-      ),
+          it and roll it out flat and leave it overnight and take it up.`,
+      },
     },
   },
   {
@@ -27,9 +25,9 @@ export const pinData = [
       title: "Udon noodles",
       year: "1643",
       location: "Japan",
-      content: (
-        <Text size="sm">
-          Beat the flour as much as is necessary. For salt seasoning, put 1 shō
+      content: {
+        description: "TODO: write",
+        recipe: `Beat the flour as much as is necessary. For salt seasoning, put 1 shō
           of salt in 3 shō of water in summer, and 1 shō of salt in 5 shō of
           water in winter. Using this saltwater, mix in to season just right.
           Affix the dough on a millstone, and carefully and without vibration
@@ -37,9 +35,8 @@ export const pinData = [
           cover, and put it in a place where the wind doesn’t blow. Take out one
           at a time and beat it. Boil and season to taste. The broth is ninuki,
           or possibly taremiso. Garnish with black pepper and ume. 1 shō ≈ 1/2
-          gallon.
-        </Text>
-      ),
+          gallon.`,
+      },
     },
   },
   {
@@ -49,13 +46,12 @@ export const pinData = [
       title: "Kneaded Bread",
       year: "160 BCE",
       location: "Italy",
-      content: (
-        <Text size="sm">
-          Wash your hands and a bowl thoroughly. Pour meal into the bowl, add
+      content: {
+        description: "TODO: write",
+        recipe: `Wash your hands and a bowl thoroughly. Pour meal into the bowl, add
           water gradually, and knead thoroughly. When it is well kneaded, roll
-          out and bake under a crock."
-        </Text>
-      ),
+          out and bake under a crock.`,
+      },
     },
   },
   {
@@ -65,9 +61,9 @@ export const pinData = [
       title: "Kanuchi",
       year: "1951",
       location: "Cherokee Territory",
-      content: (
-        <Text size="sm">
-          Gather hickory nuts or scalybarks, dry on a rack before the fire. When
+      content: {
+        description: "TODO: write",
+        recipe: `Gather hickory nuts or scalybarks, dry on a rack before the fire. When
           the nuts are dry crack them by using a large flat rock placed in a
           flat basket lined temporarily with a cloth, use a smaller rock to
           pound the nuts when placed on the larger rock. When the nuts are all
@@ -82,9 +78,8 @@ export const pinData = [
           it may be used as a drink. As soon as enough soup has been poured off
           to leave a very thick mixture more water may be added. Do not drink
           the very last of the mixture because that is where the little bits of
-          hulls are.
-        </Text>
-      ),
+          hulls are.`,
+      },
     },
   },
   {
@@ -94,9 +89,9 @@ export const pinData = [
       title: "Almond Milk Rice",
       year: "1470",
       location: "Northern Italy",
-      content: (
-        <Text size="sm">
-          For ten portions, use one pound of almonds and clean them well so that
+      content: {
+        description: "TODO: write",
+        recipe: `For ten portions, use one pound of almonds and clean them well so that
           they are white. Then take one pound of rice, and wash it two or three
           times with lukewarm water, and boil it with some clean water until it
           is well cooked. Then you drain it and place it out to dry. Then mash
@@ -106,9 +101,8 @@ export const pinData = [
           pound of refined sugar. And when it starts to boil add the rice and
           move the casserole over embers, far away from the fire, stirring
           continuously with the spoon to prevent burning. It should boil for
-          about half a hour.
-        </Text>
-      ),
+          about half a hour.`,
+      },
     },
   },
   {
@@ -118,15 +112,14 @@ export const pinData = [
       title: "Guacamole",
       year: "1697",
       location: "Panama Bay",
-      content: (
-        <Text size="sm">
-          This fruit has no taste of itself, and therefore it is usually mixed
+      content: {
+        description: "TODO: write",
+        recipe: `This fruit has no taste of itself, and therefore it is usually mixed
           with sugar and lime-juice and beaten together in a plate; and this is
           an excellent dish. The ordinary way is to eat it with a little salt
           and a roasted plantain; and thus a man that's hungry may make a good
-          meal of it.
-        </Text>
-      ),
+          meal of it.`,
+      },
     },
   },
   {
@@ -136,9 +129,9 @@ export const pinData = [
       title: "Groundnut Soup",
       year: "1910",
       location: "Nigeria",
-      content: (
-        <Text size="sm">
-          1 pint of stock. 2 teaspoon salt. 1 teacup ground nut. pinch pepper.
+      content: {
+        description: "TODO: write",
+        recipe: `1 pint of stock. 2 teaspoon salt. 1 teacup ground nut. pinch pepper.
           Any stock from fowl or button broth or beef soup or even water left
           from vegetable soup can be used for a ground nut soup, or some stock
           made quickly with Lemeo or Maggi. 1. Roast and peel the ground nuts
@@ -147,9 +140,8 @@ export const pinData = [
           you mix with the hot stock and let it boil for a quarter of an hour.
           Serve with little squares of fried bread. A teaspoon of vermouth can
           be added to each soup plate at table if liked, or a few drops of
-          sherry and pepper.
-        </Text>
-      ),
+          sherry and pepper.`,
+      },
     },
   },
   {
@@ -159,9 +151,9 @@ export const pinData = [
       title: "Potato Pie",
       year: "1700",
       location: "Ireland",
-      content: (
-        <Text size="sm">
-          Take 2 dozen of potatoes boyle them till they will peele, then slit
+      content: {
+        description: "TODO: write",
+        recipe: `Take 2 dozen of potatoes boyle them till they will peele, then slit
           them, being peeled in the middle, then raise your pie, and take 2
           pound of butter, and wash it in rose water, and worke it in your
           hands, then lay it in a thin cake all over the bottom of your pie,
@@ -178,9 +170,8 @@ export const pinData = [
           putting there to half a pound of butter & a quarter of a pound of
           shugar stirring them together they bee thick then putt it into the pie
           and set it in the oven tother half hour and scrap hard shugar over it
-          and so serve it.
-        </Text>
-      ),
+          and so serve it.`,
+      },
     },
   },
-] satisfies Pin[];
+];
