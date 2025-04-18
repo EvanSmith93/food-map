@@ -24,25 +24,33 @@ const DetailModal = ({
   setOpenedPin: (pin: Pin | null) => void;
 }) => {
   const [customIngredients, setCustomIngredients] = useState<string[]>([]);
+  const [loading, setLoading] = useState(false);
+  const [aiResponse, setAiResponse] = useState<string | null>(null);
 
   const onClose = () => {
     setOpenedPin(null);
+    setCustomIngredients([]);
+    setLoading(false);
+    setAiResponse(null);
   };
 
   const onCreate = async () => {
+    setLoading(true);
+
     const res = await fetch("http://localhost:3001/api/recipe", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        recipe: openedPin?.data.content.recipe,
+        recipe: `${openedPin?.data.title}: ${openedPin?.data.content.recipe}`,
         ingredients: customIngredients,
       }),
     });
     const data = await res.json();
 
-    console.log(data.text);
+    setLoading(false);
+    setAiResponse(data.text);
   };
 
   return (
@@ -99,12 +107,20 @@ const DetailModal = ({
               onClick={onCreate}
               leftSection={<Sparkles size={14} />}
               disabled={customIngredients.length === 0}
+              loading={loading}
               fullWidth
             >
               Create
             </Button>
           </Grid.Col>
         </Grid>
+
+        {aiResponse && (
+          <>
+            <Title order={4}>Variation</Title>
+            <Text>{aiResponse}</Text>
+          </>
+        )}
       </Stack>
     </Modal>
   );
