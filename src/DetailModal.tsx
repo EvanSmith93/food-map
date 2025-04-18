@@ -2,15 +2,18 @@ import {
   Badge,
   Blockquote,
   Button,
+  Divider,
   Flex,
-  Input,
+  Grid,
   Modal,
   Stack,
+  TagsInput,
   Text,
+  Title,
 } from "@mantine/core";
 import { Pin } from "./WorldMap";
 import { useState } from "react";
-import { Calendar, Map } from "lucide-react";
+import { Calendar, Map, Sparkles } from "lucide-react";
 
 const DetailModal = ({
   openedPin,
@@ -19,53 +22,67 @@ const DetailModal = ({
   openedPin: Pin | null;
   setOpenedPin: (pin: Pin | null) => void;
 }) => {
-  const [aiModal, setAiModal] = useState(false);
+  const [customIngredients, setCustomIngredients] = useState<string[]>([]);
 
   const onClose = () => {
     setOpenedPin(null);
-    setAiModal(false);
   };
 
   return (
-    <>
-      <Modal
-        opened={openedPin !== null && !aiModal}
-        onClose={onClose}
-        title={openedPin?.data.title}
-        size="lg"
-        centered
-      >
-        <Stack>
-          <Flex gap={8}>
-            <Badge leftSection={<Map size={14} />}>
-              {openedPin?.data.location}
-            </Badge>
-            <Badge leftSection={<Calendar size={14} />}>
-              {openedPin?.data.year}
-            </Badge>
-          </Flex>
+    <Modal
+      opened={openedPin !== null}
+      onClose={onClose}
+      title={<Title order={2}>{openedPin?.data.title}</Title>}
+      size="xl"
+      centered
+    >
+      <Stack>
+        <Flex gap={8}>
+          <Badge leftSection={<Map size={14} />}>
+            {openedPin?.data.location}
+          </Badge>
+          <Badge leftSection={<Calendar size={14} />}>
+            {openedPin?.data.year}
+          </Badge>
+        </Flex>
 
-          <Blockquote>{openedPin?.data.content.recipe}</Blockquote>
-          <Text size="sm">{openedPin?.data.content.description}</Text>
+        <Blockquote>{openedPin?.data.content.recipe}</Blockquote>
+        <Text size="sm">{openedPin?.data.content.description}</Text>
 
-          <Button onClick={() => setAiModal(true)}>Remix</Button>
-        </Stack>
-      </Modal>
-      <Modal
-        opened={aiModal}
-        onClose={onClose}
-        title={`Remix ${openedPin?.data.title}`}
-        size="lg"
-        centered
-      >
-        {openedPin && (
-          <Stack>
-            <Input placeholder="Enter ingredients to combine with this recipe" />
-            <Button onClick={() => null}>Combine</Button>
-          </Stack>
-        )}
-      </Modal>
-    </>
+        <Divider />
+
+        <Title order={3}>Create Variation</Title>
+        <Text>
+          Throughout globalization, people have been taken recipes from other
+          cultures and adapted them to the foods they have access to or are used
+          to. Globalization is still happening today, and you can participate.
+          Enter a list of ingredients below and we'll generate a variation of
+          the above recipe that includes your ingredients. The generated recipe
+          will not be a real historical recipe, however, this process of
+          combining food from various cultures is not new.
+        </Text>
+        <Grid>
+          <Grid.Col span={9}>
+            <TagsInput
+              placeholder="Pineapple, Black beans, Soy sauce, etc."
+              value={customIngredients}
+              onChange={setCustomIngredients}
+              splitChars={[",", "\n"]}
+            />
+          </Grid.Col>
+          <Grid.Col span={3}>
+            <Button
+              onClick={() => null}
+              leftSection={<Sparkles size={14} />}
+              disabled={customIngredients.length === 0}
+              fullWidth
+            >
+              Create
+            </Button>
+          </Grid.Col>
+        </Grid>
+      </Stack>
+    </Modal>
   );
 };
 
