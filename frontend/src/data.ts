@@ -30,12 +30,14 @@ export const pinData: Pin[] = [
         "olives",
       ],
       content: {
-        description: "TODO: write",
         recipe: `Take chickpeas and pound them fine after boiling them. Then take
-          vinegar, oil, tahineh, pepper, aṭrāf ṭīb, mint, parsley, the refuse of
-          dry thyme, walnuts, hazelnuts, almonds, pistachios, Ceylon cinnamon,
-          toasted caraway, dry coriander, salt, salted lemons and olives. Stir
-          it and roll it out flat and leave it overnight and take it up.`,
+        vinegar, oil, tahineh, pepper, aṭrāf ṭīb, mint, parsley, the refuse of
+        dry thyme, walnuts, hazelnuts, almonds, pistachios, Ceylon cinnamon,
+        toasted caraway, dry coriander, salt, salted lemons and olives. Stir
+        it and roll it out flat and leave it overnight and take it up.`,
+        description: `This recipe comes from a roughly 13th century Islamic cookbook for ḥummuṣ kasā, also known as crushed chickpeas.
+        This recipe includes chickpeas, tahineh (tahini), olives, oil, and salt, which are the basics of many modern hummus recipes.
+        However, it also includes many nuts and spices that are uncommon in modern hummus.`,
       },
     },
   },
@@ -56,16 +58,18 @@ export const pinData: Pin[] = [
         "ume",
       ],
       content: {
-        description: "TODO: write",
         recipe: `Beat the flour as much as is necessary. For salt seasoning, put 1 shō
-          of salt in 3 shō of water in summer, and 1 shō of salt in 5 shō of
-          water in winter. Using this saltwater, mix in to season just right.
-          Affix the dough on a millstone, and carefully and without vibration
-          roll it up to roughly ball shaped and put it in a box. Wet a cloth,
-          cover, and put it in a place where the wind doesn’t blow. Take out one
-          at a time and beat it. Boil and season to taste. The broth is ninuki,
-          or possibly taremiso. Garnish with black pepper and ume. 1 shō ≈ 1/2
-          gallon.`,
+        of salt in 3 shō of water in summer, and 1 shō of salt in 5 shō of
+        water in winter. Using this saltwater, mix in to season just right.
+        Affix the dough on a millstone, and carefully and without vibration
+        roll it up to roughly ball shaped and put it in a box. Wet a cloth,
+        cover, and put it in a place where the wind doesn’t blow. Take out one
+        at a time and beat it. Boil and season to taste. The broth is ninuki,
+        or possibly taremiso. Garnish with black pepper and ume. `,
+        description: `This recipe for udon noodles comes from an early Japanese recipe book.
+        It is one of the only recipes I collected that includes measurements for ingredients.
+        For context, 1 shō is roughly 1/2 gallon.
+        This recipe differs from more modern udon noodle recipes which typically include corn or potato starch.`,
       },
     },
   },
@@ -185,7 +189,8 @@ export const pinData: Pin[] = [
         "sherry",
         "fried bread",
       ],
-      content: { // This recipe may not work since it's nothing like most other groundnut soup recipes and just came from some white people
+      content: {
+        // This recipe may not work since it's nothing like most other groundnut soup recipes and just came from some white people
         recipe: `1 pint of stock. 2 teaspoon salt. 1 teacup ground nut. pinch pepper.
           Any stock from fowl or button broth or beef soup or even water left
           from vegetable soup can be used for a ground nut soup, or some stock
