@@ -36,6 +36,7 @@ export const pinData: Pin[] = [
         toasted caraway, dry coriander, salt, salted lemons and olives. Stir
         it and roll it out flat and leave it overnight and take it up.`,
         description: `This recipe comes from a roughly 13th century Islamic cookbook for ḥummuṣ kasā, also known as crushed chickpeas.
+        It is unclear where in the Middle East this cookbook was written.
         This recipe includes chickpeas, tahineh (tahini), olives, oil, and salt, which are the basics of many modern hummus recipes.
         However, it also includes many nuts and spices that are uncommon in modern hummus.`,
       },
@@ -67,9 +68,11 @@ export const pinData: Pin[] = [
         at a time and beat it. Boil and season to taste. The broth is ninuki,
         or possibly taremiso. Garnish with black pepper and ume. `,
         description: `This recipe for udon noodles comes from an early Japanese recipe book.
-        It is one of the only recipes I collected that includes measurements for ingredients.
+        Udon noodles are thick and chewy and have spread across the world.
+        This is one of the only recipes I collected that includes measurements for ingredients.
         For context, 1 shō is roughly 1/2 gallon.
-        This recipe differs from more modern udon noodle recipes which typically include corn or potato starch.`,
+        This recipe differs from more modern udon noodle recipes which typically include corn or potato starch.
+        However, this recipe otherwise seems pretty similar to modern variations.`,
       },
     },
   },
@@ -87,7 +90,10 @@ export const pinData: Pin[] = [
         out and bake under a crock.`,
         description: `This is the oldest recipe on this site. 
         It comes from an ancient Roman text that covers various topics surrounding agriculture.
-        This recipe is very simple, however it shows how prevalent bread has been throughout history.`,
+        This recipe is very simple, however it shows how prevalent bread has been throughout history.
+        It is unclear what "meal" refers to, however it likely refers to ground grain such as wheat or barley.
+        Most modern bread recipes include other ingredients such as salt, sugar, or yeast.
+        However, the basics of modern recipes involve this same basic process.`,
       },
     },
   },
@@ -118,7 +124,9 @@ export const pinData: Pin[] = [
           hulls are.`,
         description: `Kanuchi, often known as hickory nut soup, is a traditional Cherokee dish. 
         It was difficult to find a contemporary recipe book from a Native American tribe because most did not have a written tradition. 
-        This recipe came from a book written in 1950 that interviewed Cherokee in North Carolina about their traditional family recipes.`,
+        This recipe came from a book written in 1950 that interviewed Cherokee in North Carolina about their traditional family recipes in an effort to preserve the recipes.
+        Because of how recently this recipe was recorded and how unknown the food is by most of the world, it has not evolved too much.
+        Some more modern recipes use pecans instead of hickory nuts as hickory nuts are less commonly sold.`,
       },
     },
   },
@@ -183,13 +191,7 @@ export const pinData: Pin[] = [
       title: "Groundnut Soup",
       year: "1910",
       location: "Nigeria",
-      ingredients: [
-        "stock",
-        "salt",
-        "ground nut",
-        "pepper",
-        "fried bread",
-      ],
+      ingredients: ["stock", "salt", "ground nut", "pepper", "fried bread"],
       content: {
         // This recipe may not work since it's nothing like most other groundnut soup recipes and just came from some white people
         recipe: `1 pint of stock. 2 teaspoon salt. 1 teacup ground nut. pinch pepper.
