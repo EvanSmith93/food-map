@@ -1,16 +1,37 @@
-import { createTheme, MantineProvider, Text, Title } from "@mantine/core";
+import {
+  createTheme,
+  MantineProvider,
+  Title,
+  Text,
+  Container,
+  Group,
+  Image,
+  Box,
+} from "@mantine/core";
 import "./App.css";
 import WorldMap from "./WorldMap";
+import logo from "../public/logo.png";
 
 function App() {
   const theme = createTheme({});
 
   return (
     <MantineProvider theme={theme}>
-      <div style={{ padding: "24px" }}>
-        <Title order={2} mb="md">
-          Food Globalization Map
-        </Title>
+      <Box
+        bg="gray.1"
+        px="md"
+        py="sm"
+        style={{ borderBottom: "1px solid #ccc" }}
+      >
+        <Group align="center" gap="sm">
+          <Image src={logo} alt="Logo" className="w-8 h-8" />
+          <Title order={3}>Food Globalization Map</Title>
+        </Group>
+      </Box>
+
+      <Container size="xl" pt="md">
+        <WorldMap />
+        <Title order={2} className="pt-6">About</Title>
         <Text mb="sm">
           This website contains a collection of a collection of recipes from
           around the world, with a focus on plant-based recipes. Click on each
@@ -28,8 +49,7 @@ function App() {
           combining ingredients to create something new is common practice
           during globalization.
         </Text>
-        <WorldMap />
-      </div>
+      </Container>
     </MantineProvider>
   );
 }
