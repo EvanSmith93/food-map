@@ -78,23 +78,24 @@ export const pinData: Pin[] = [
       location: "Italy",
       ingredients: ["meal", "water"],
       content: {
-        description: "TODO: write",
         recipe: `Wash your hands and a bowl thoroughly. Pour meal into the bowl, add
-          water gradually, and knead thoroughly. When it is well kneaded, roll
-          out and bake under a crock.`,
+        water gradually, and knead thoroughly. When it is well kneaded, roll
+        out and bake under a crock.`,
+        description: `This is the oldest recipe on this site. 
+        It comes from an ancient Roman text that covers various topics surrounding agriculture.
+        This recipe is very simple, however it shows how prevalent bread has been throughout history.`,
       },
     },
   },
   {
     id: "4",
-    position: [35.97653594, -83.923713929],
+    position: [35.52965, -79.137941],
     data: {
       title: "Kanuchi",
-      year: "1951",
-      location: "Cherokee Territory",
+      year: "1950",
+      location: "North Carolina",
       ingredients: ["hickory nuts", "scalybarks", "water", "bread", "dumpling"],
       content: {
-        description: "TODO: write",
         recipe: `Gather hickory nuts or scalybarks, dry on a rack before the fire. When
           the nuts are dry crack them by using a large flat rock placed in a
           flat basket lined temporarily with a cloth, use a smaller rock to
@@ -111,6 +112,9 @@ export const pinData: Pin[] = [
           to leave a very thick mixture more water may be added. Do not drink
           the very last of the mixture because that is where the little bits of
           hulls are.`,
+        description: `Kanuchi, often known as hickory nut soup, is a traditional Cherokee dish. 
+        It was difficult to find a contemporary recipe book from a Native American tribe because most did not have a written tradition. 
+        This recipe came from a book written in 1950 that interviewed Cherokee in North Carolina about their traditional family recipes.`,
       },
     },
   },
@@ -123,7 +127,6 @@ export const pinData: Pin[] = [
       location: "Northern Italy",
       ingredients: ["almonds", "rice", "water", "refined sugar"],
       content: {
-        description: "TODO: write",
         recipe: `For ten portions, use one pound of almonds and clean them well so that
           they are white. Then take one pound of rice, and wash it two or three
           times with lukewarm water, and boil it with some clean water until it
@@ -135,6 +138,7 @@ export const pinData: Pin[] = [
           move the casserole over embers, far away from the fire, stirring
           continuously with the spoon to prevent burning. It should boil for
           about half a hour.`,
+        description: "TODO: write",
       },
     },
   },
@@ -153,12 +157,15 @@ export const pinData: Pin[] = [
         "roasted plantain",
       ],
       content: {
-        description: "TODO: write",
         recipe: `This fruit has no taste of itself, and therefore it is usually mixed
           with sugar and lime-juice and beaten together in a plate; and this is
           an excellent dish. The ordinary way is to eat it with a little salt
           and a roasted plantain; and thus a man that's hungry may make a good
           meal of it.`,
+        description: `This recipe (or rather a combination of two slightly different recipes) came from William Dampier.
+        Dampier was an English explorer.
+        He recorded information about how people in the Panama Bay used avocados, which became the first guacamole recipe in English.
+        TODO: talk about ahuacamolli, the Aztec guacamole that I couldn't find a recipe for`,
       },
     },
   },
@@ -178,8 +185,7 @@ export const pinData: Pin[] = [
         "sherry",
         "fried bread",
       ],
-      content: {
-        description: "TODO: write",
+      content: { // This recipe may not work since it's nothing like most other groundnut soup recipes and just came from some white people
         recipe: `1 pint of stock. 2 teaspoon salt. 1 teacup ground nut. pinch pepper.
           Any stock from fowl or button broth or beef soup or even water left
           from vegetable soup can be used for a ground nut soup, or some stock
@@ -190,6 +196,7 @@ export const pinData: Pin[] = [
           Serve with little squares of fried bread. A teaspoon of vermouth can
           be added to each soup plate at table if liked, or a few drops of
           sherry and pepper.`,
+        description: "TODO: write",
       },
     },
   },

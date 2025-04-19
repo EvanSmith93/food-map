@@ -79,12 +79,12 @@ const DetailModal = ({
         </Flex>
 
         <Blockquote>{openedPin?.data.content.recipe}</Blockquote>
-        <Text size="sm">{openedPin?.data.content.description}</Text>
+        <Text>{openedPin?.data.content.description}</Text>
 
         <Divider />
 
         <Title order={3}>Create Variation</Title>
-        <Text>
+        <Text size="sm">
           Throughout globalization, people have been taken recipes from other
           cultures and adapted them to the foods they have access to or are used
           to. Globalization is still happening today, and you can participate.
