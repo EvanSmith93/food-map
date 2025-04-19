@@ -1,4 +1,3 @@
-import React from "react";
 import { createTheme, MantineProvider, Text, Title } from "@mantine/core";
 import "./App.css";
 import WorldMap from "./WorldMap";

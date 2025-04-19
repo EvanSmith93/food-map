@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import { MapContainer, TileLayer, Marker } from "react-leaflet";
 import { Grid } from "@mantine/core";

@@ -1,4 +1,3 @@
-import React from "react";
 import { Stack, Text, Anchor, Title } from "@mantine/core";
 
 export type Source = {
