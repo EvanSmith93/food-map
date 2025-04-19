@@ -39,6 +39,16 @@ export const pinData: Pin[] = [
         It is unclear where in the Middle East this cookbook was written.
         This recipe includes chickpeas, tahineh (tahini), olives, oil, and salt, which are the basics of many modern hummus recipes.
         However, it also includes many nuts and spices that are uncommon in modern hummus.`,
+        sources: [
+          {
+            title: "The Hummus Wars",
+            url: "https://www-jstor-org.byu.idm.oclc.org/stable/10.1525/gfc.2012.12.1.34?seq=2",
+          },
+          {
+            title: "Modern Hummus Recipe",
+            url: "https://www.themediterraneandish.com/how-to-make-hummus/",
+          },
+        ],
       },
     },
   },
@@ -73,6 +83,16 @@ export const pinData: Pin[] = [
         For context, 1 shō is roughly 1/2 gallon.
         This recipe differs from more modern udon noodle recipes which typically include corn or potato starch.
         However, this recipe otherwise seems pretty similar to modern variations.`,
+        sources: [
+          {
+            title: "Ryori Monogatari",
+            url: "https://sengokudaimyo.com/table-of-contents",
+          },
+          {
+            title: "Homemade Udon Noodles",
+            url: "https://www.justonecookbook.com/udon-noodles/",
+          },
+        ],
       },
     },
   },
@@ -94,6 +114,16 @@ export const pinData: Pin[] = [
         It is unclear what "meal" refers to, however it likely refers to ground grain such as wheat or barley.
         Most modern bread recipes include other ingredients such as salt, sugar, or yeast.
         However, the basics of modern recipes involve this same basic process.`,
+        sources: [
+          {
+            title: "De Agricultura",
+            url: "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cato/De_Agricultura/home.html",
+          },
+          {
+            title: "Kneaded Bread Recipe",
+            url: "https://kitchenjoyblog.com/homemade-dutch-oven-bread-kneaded-knead-methods/",
+          },
+        ],
       },
     },
   },
@@ -126,7 +156,18 @@ export const pinData: Pin[] = [
         It was difficult to find a contemporary recipe book from a Native American tribe because most did not have a written tradition. 
         This recipe came from a book written in 1950 that interviewed Cherokee in North Carolina about their traditional family recipes in an effort to preserve the recipes.
         Because of how recently this recipe was recorded and how unknown the food is by most of the world, it has not evolved too much.
-        Some more modern recipes use pecans instead of hickory nuts as hickory nuts are less commonly sold.`,
+        Some more modern recipes use pecans instead of hickory nuts as hickory nuts are less commonly sold.
+        They also often include sweet potatoes.`,
+        sources: [
+          {
+            title: "Cherokee Cooklore",
+            url: "https://archive.org/details/CherokeeCooklore/mode/2up",
+          },
+          {
+            title: "Kanuchi (Cherokee Pureed Nut Soup)",
+            url: "https://www.seriouseats.com/kanuchi-cherokee-pureed-nut-soup",
+          },
+        ],
       },
     },
   },
@@ -154,6 +195,16 @@ export const pinData: Pin[] = [
         This book contained several recipes that used almond milk and one with hemp seed milk.
         This shows that alternative milks have been used in cooking for hundreds of years.
         This recipe is similar to modern recipes, however it doesn't contain spices like cinnamon or any other toppings such as nuts or berries.`,
+        sources: [
+          {
+            title: "Libro de Arte coquinaria (English Translation)",
+            url: "https://shainer.github.io/downloads/libro-de-arte-coquinaria-english-translation.pdf",
+          },
+          {
+            title: "Almond Milk Rice Pudding",
+            url: "https://feelgoodfoodie.net/recipe/almond-milk-rice-pudding/",
+          },
+        ],
       },
     },
   },
@@ -180,7 +231,19 @@ export const pinData: Pin[] = [
         description: `This recipe (or rather a combination of two slightly different recipes) came from William Dampier.
         Dampier was an English explorer.
         He recorded information about how people in the Panama Bay used avocados, which became the first guacamole recipe in English.
-        TODO: talk about ahuacamolli, the Aztec guacamole that I couldn't find a recipe for`,
+        TODO: talk about ahuacamolli, the Aztec guacamole that I couldn't find a recipe for
+        This recipe doesn't contain many onion, peppers, or tomato, which are all common in modern guacamole.
+        In addition, the recipe uses sugar, which is no longer common in guacamole.`,
+        sources: [
+          {
+            title: "A New Voyage Round the World",
+            url: "https://gutenberg.net.au/ebooks05/0500461h.html",
+          },
+          {
+            title: "Best Ever Guacamole",
+            url: "https://downshiftology.com/recipes/best-ever-guacamole/",
+          },
+        ],
       },
     },
   },
@@ -193,16 +256,20 @@ export const pinData: Pin[] = [
       location: "Nigeria",
       ingredients: ["stock", "salt", "ground nut", "pepper", "fried bread"],
       content: {
-        // This recipe may not work since it's nothing like most other groundnut soup recipes and just came from some white people
+        // This recipe is from a book all about how to cook primarily French recipes in West Africa. It is not meant to be about African recipes...
         recipe: `1 pint of stock. 2 teaspoon salt. 1 teacup ground nut. pinch pepper.
           Any stock from fowl or button broth or beef soup or even water left
           from vegetable soup can be used for a ground nut soup, or some stock
-          made quickly with Lemeo or Maggi. 1. Roast and peel the ground nuts
+          made quickly with Lemeo or Maggi. Roast and peel the ground nuts
           and pound them to & paste in a native mortar if you have no proper
           kitchen one, mix them with a teacup of water. This makes a paste that
           you mix with the hot stock and let it boil for a quarter of an hour.
           Serve with little squares of fried bread.`,
-        description: "TODO: write",
+        description: `This recipe comes from a 1910 book written by two Europeans about West African food.
+        I searched for a long time for a recipe that would be more historically accurate.
+        However, this was the closest thing I could find.
+        TODO: talk more about peanuts in west Africa`,
+        sources: [],
       },
     },
   },
@@ -248,6 +315,7 @@ export const pinData: Pin[] = [
           and set it in the oven tother half hour and scrap hard shugar over it
           and so serve it.`,
         description: "TODO: write",
+        sources: [],
       },
     },
   },

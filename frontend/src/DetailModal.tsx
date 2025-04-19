@@ -15,6 +15,7 @@ import {
 import { Pin } from "./WorldMap";
 import { useState } from "react";
 import { Calendar, Map, Sparkles } from "lucide-react";
+import { SourcesList } from "./SourceList";
 
 const DetailModal = ({
   openedPin,
@@ -80,6 +81,7 @@ const DetailModal = ({
 
         <Blockquote>{openedPin?.data.content.recipe}</Blockquote>
         <Text>{openedPin?.data.content.description}</Text>
+        <SourcesList sources={openedPin?.data.content.sources ?? []} />
 
         <Divider />
 

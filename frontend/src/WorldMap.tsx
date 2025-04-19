@@ -8,6 +8,7 @@ import { pinData } from "./data.ts";
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import DetailModal from "./DetailModal.tsx";
+import { Source } from "./SourceList.tsx";
 
 const DefaultIcon = L.icon({
   iconUrl: markerIcon,
@@ -25,6 +26,7 @@ export interface RecipeData {
   content: {
     recipe: string;
     description: string;
+    sources: Source[];
   };
 }
 
