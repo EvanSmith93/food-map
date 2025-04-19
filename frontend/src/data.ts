@@ -142,7 +142,10 @@ export const pinData: Pin[] = [
           move the casserole over embers, far away from the fire, stirring
           continuously with the spoon to prevent burning. It should boil for
           about half a hour.`,
-        description: "TODO: write",
+        description: `This recipe came from an Italian recipe book known as Libro de arte coquinaria, which translates to The art of Cooking.
+        This book contained several recipes that used almond milk and one with hemp seed milk.
+        This shows that alternative milks have been used in cooking for hundreds of years.
+        This recipe is similar to modern recipes, however it doesn't contain spices like cinnamon or any other toppings such as nuts or berries.`,
       },
     },
   },
@@ -185,8 +188,6 @@ export const pinData: Pin[] = [
         "salt",
         "ground nut",
         "pepper",
-        "vermouth",
-        "sherry",
         "fried bread",
       ],
       content: {
@@ -198,9 +199,7 @@ export const pinData: Pin[] = [
           and pound them to & paste in a native mortar if you have no proper
           kitchen one, mix them with a teacup of water. This makes a paste that
           you mix with the hot stock and let it boil for a quarter of an hour.
-          Serve with little squares of fried bread. A teaspoon of vermouth can
-          be added to each soup plate at table if liked, or a few drops of
-          sherry and pepper.`,
+          Serve with little squares of fried bread.`,
         description: "TODO: write",
       },
     },
@@ -228,7 +227,6 @@ export const pinData: Pin[] = [
         "hard sugar",
       ],
       content: {
-        description: "TODO: write",
         recipe: `Take 2 dozen of potatoes boyle them till they will peele, then slit
           them, being peeled in the middle, then raise your pie, and take 2
           pound of butter, and wash it in rose water, and worke it in your
@@ -247,6 +245,7 @@ export const pinData: Pin[] = [
           shugar stirring them together they bee thick then putt it into the pie
           and set it in the oven tother half hour and scrap hard shugar over it
           and so serve it.`,
+        description: "TODO: write",
       },
     },
   },
