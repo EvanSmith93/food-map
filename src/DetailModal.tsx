@@ -37,7 +37,7 @@ const DetailModal = ({
   const onCreate = async () => {
     setLoading(true);
 
-    const res = await fetch("http://localhost:3001/api/recipe", {
+    const res = await fetch("/api/recipe", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
