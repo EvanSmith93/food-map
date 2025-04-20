@@ -86,13 +86,15 @@ const DetailModal = ({
 
         <Title order={3}>Create Variation</Title>
         <Text size="sm">
-          Throughout globalization, people have been taken recipes from other
-          cultures and adapted them to the foods they have access to or are used
-          to. Globalization is still happening today, and you can participate.
-          Enter a list of ingredients below and we'll generate a variation of
-          the above recipe that includes your ingredients. The generated recipe
-          will not be a real historical recipe, however, this process of
-          combining food from various cultures is not new.
+          Globalization is the process of cultures becoming more connected
+          through increased travel and communication. As part of globalization,
+          people take recipes from other cultures and adapt them to the foods
+          they have access to or are used to. This is still happening today, and
+          you can participate. Enter a list of ingredients below and we'll
+          generate a variation of the above recipe that includes your
+          ingredients. The generated recipe will not be a real historical
+          recipe, however, this process of combining food from various cultures
+          is not new.
         </Text>
         <Grid>
           <Grid.Col span={9}>

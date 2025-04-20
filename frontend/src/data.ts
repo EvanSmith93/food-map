@@ -44,7 +44,7 @@ export const pinData: Pin[] = [
         sources: [
           {
             title: "The Hummus Wars",
-            url: "https://www-jstor-org.byu.idm.oclc.org/stable/10.1525/gfc.2012.12.1.34?seq=2",
+            url: "https://www.jstor.org/stable/10.1525/gfc.2012.12.1.34",
           },
           {
             title: "Modern Hummus Recipe",
@@ -78,13 +78,13 @@ export const pinData: Pin[] = [
         roll it up to roughly ball shaped and put it in a box. Wet a cloth,
         cover, and put it in a place where the wind doesn’t blow. Take out one
         at a time and beat it. Boil and season to taste. The broth is ninuki,
-        or possibly taremiso. Garnish with black pepper and ume. `,
+        or possibly taremiso. Garnish with black pepper and ume.`,
         description: `This recipe for udon noodles comes from an early Japanese recipe book.
         Udon noodles are thick and chewy and have spread across the world.
-        This is one of the only recipes I collected that includes measurements for ingredients.
-        For context, 1 shō is roughly 1/2 gallon.
-        This recipe differs from more modern udon noodle recipes which typically include corn or potato starch.
-        However, this recipe otherwise seems pretty similar to modern variations.`,
+        For context, 1 shō is roughly 0.5 gallons.
+        This recipe differs from more modern udon noodle recipes which typically include corn or potato starch to prevent sticking.
+        The instructions do not state what Ninuki is, which is not a common ingredient today.
+        Otherwise, these Udon noodles are similar to modern noodles in many ways.`,
         sources: [
           {
             title: "Ryori Monogatari",
@@ -159,7 +159,7 @@ export const pinData: Pin[] = [
         This recipe came from a book written in 1950 that interviewed Cherokee in North Carolina about their traditional family recipes in an effort to preserve the recipes.
         Because of how recently this recipe was recorded and how unknown the food is by most of the world, it has not evolved too much.
         Some more modern recipes use pecans instead of hickory nuts as hickory nuts are less commonly sold.
-        They also often include sweet potatoes, which this recipe doesn't mention.`,
+        They also often include sweet potatoes, which this variant doesn't mention.`,
         sources: [
           {
             title: "Cherokee Cooklore",
