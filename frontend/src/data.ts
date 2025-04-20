@@ -6,7 +6,7 @@ export const pinData: Pin[] = [
     position: [32.2986, 35.992251],
     data: {
       title: "Hummus",
-      year: "1200s",
+      year: "~1250",
       location: "Middle East",
       ingredients: [
         "chickpeas",
@@ -37,8 +37,10 @@ export const pinData: Pin[] = [
         it and roll it out flat and leave it overnight and take it up.`,
         description: `This recipe comes from a roughly 13th century Islamic cookbook for ḥummuṣ kasā, also known as crushed chickpeas.
         It is unclear where in the Middle East this cookbook was written.
+        Hummus was eaten in both Syria and Egypt in the medieval Islamic age, however it's unclear where in the middle east it began.
         This recipe includes chickpeas, tahineh (tahini), olives, oil, and salt, which are the basics of many modern hummus recipes.
-        However, it also includes many nuts and spices that are uncommon in modern hummus.`,
+        However, it also includes many nuts and spices that are uncommon in modern hummus.
+        Unlike most other recipes on this site, hummus lost ingredients over time, rather than gaining them.`,
         sources: [
           {
             title: "The Hummus Wars",
@@ -113,7 +115,7 @@ export const pinData: Pin[] = [
         This recipe is very simple, however it shows how prevalent bread has been throughout history.
         It is unclear what "meal" refers to, however it likely refers to ground grain such as wheat or barley.
         Most modern bread recipes include other ingredients such as salt, sugar, or yeast.
-        However, the basics of modern recipes involve this same basic process.`,
+        However, the basics of modern recipes involve this same basic process of kneading water with some type of grain meal.`,
         sources: [
           {
             title: "De Agricultura",
@@ -157,7 +159,7 @@ export const pinData: Pin[] = [
         This recipe came from a book written in 1950 that interviewed Cherokee in North Carolina about their traditional family recipes in an effort to preserve the recipes.
         Because of how recently this recipe was recorded and how unknown the food is by most of the world, it has not evolved too much.
         Some more modern recipes use pecans instead of hickory nuts as hickory nuts are less commonly sold.
-        They also often include sweet potatoes.`,
+        They also often include sweet potatoes, which this recipe doesn't mention.`,
         sources: [
           {
             title: "Cherokee Cooklore",
@@ -193,7 +195,7 @@ export const pinData: Pin[] = [
           about half a hour.`,
         description: `This recipe came from an Italian recipe book known as Libro de arte coquinaria, which translates to The art of Cooking.
         This book contained several recipes that used almond milk and one with hemp seed milk.
-        This shows that alternative milks have been used in cooking for hundreds of years.
+        This shows that alternative milks have been used in cooking for hundreds of years, even with the access of traditional dairy milks.
         This recipe is similar to modern recipes, however it doesn't contain spices like cinnamon or any other toppings such as nuts or berries.`,
         sources: [
           {
@@ -231,9 +233,11 @@ export const pinData: Pin[] = [
         description: `This recipe (or rather a combination of two slightly different recipes) came from William Dampier.
         Dampier was an English explorer.
         He recorded information about how people in the Panama Bay used avocados, which became the first guacamole recipe in English.
-        TODO: talk about ahuacamolli, the Aztec guacamole that I couldn't find a recipe for
-        This recipe doesn't contain many onion, peppers, or tomato, which are all common in modern guacamole.
-        In addition, the recipe uses sugar, which is no longer common in guacamole.`,
+        The standard lime used in guacamole originated in Asia.
+        It was brought over to Central America by the Spanish. 
+        It later became a staple in guacamole.
+        While it does contain lime juice, this recipe doesn't contain onion, peppers, or tomato, which are all common in modern guacamole.
+        In addition, the recipe suggests mixing sugar with avocado, which is not used in today's guacamole.`,
         sources: [
           {
             title: "A New Voyage Round the World",
@@ -243,6 +247,10 @@ export const pinData: Pin[] = [
             title: "Best Ever Guacamole",
             url: "https://downshiftology.com/recipes/best-ever-guacamole/",
           },
+          {
+            title: "Citrus Aurantifolia Swingle (Key Lime)",
+            url: "https://www.hort.purdue.edu/newcrop/morton/mexican_lime.html",
+          },
         ],
       },
     },
@@ -251,12 +259,11 @@ export const pinData: Pin[] = [
     id: "7",
     position: [9.034475, 7.481819],
     data: {
-      title: "Groundnut Soup",
+      title: "Groundnut (peanut) Soup",
       year: "1910",
       location: "Nigeria",
       ingredients: ["stock", "salt", "ground nut", "pepper", "fried bread"],
       content: {
-        // This recipe is from a book all about how to cook primarily French recipes in West Africa. It is not meant to be about African recipes...
         recipe: `1 pint of stock. 2 teaspoon salt. 1 teacup ground nut. pinch pepper.
           Any stock from fowl or button broth or beef soup or even water left
           from vegetable soup can be used for a ground nut soup, or some stock
@@ -266,10 +273,27 @@ export const pinData: Pin[] = [
           you mix with the hot stock and let it boil for a quarter of an hour.
           Serve with little squares of fried bread.`,
         description: `This recipe comes from a 1910 book written by two Europeans about West African food.
-        I searched for a long time for a recipe that would be more historically accurate.
-        However, this was the closest thing I could find.
-        TODO: talk more about peanuts in west Africa`,
-        sources: [],
+        I searched extensively for a recipe that would be more historically accurate.
+        However, this was the closest one I could find.
+        Most of the records I found were from Europeans commenting on West African food, rather than from West Africans directly.
+        Peanuts (also known as groundnuts) are originally from South America, likely Bolivia.
+        At some point, the Spanish brought peanuts to various places, including West Africa.
+        From there, peanuts became a staple in West African cooking, including in soup.
+        Places in South America, as well as the US south developed their own versions of peanut soup.`,
+        sources: [
+          {
+            title: "Practical West African Cookery",
+            url: "https://archive.org/details/b28132762/mode/2up",
+          },
+          {
+            title: "Southern Peanut Soup Recipe",
+            url: "https://www.thespruceeats.com/peanut-soup-recipe-3061085",
+          },
+          {
+            title: "Plant of the Month: Peanut",
+            url: "https://daily.jstor.org/plant-of-the-month-peanut/",
+          },
+        ],
       },
     },
   },
