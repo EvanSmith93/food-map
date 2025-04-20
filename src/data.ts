@@ -35,7 +35,7 @@ export const pinData: Pin[] = [
         dry thyme, walnuts, hazelnuts, almonds, pistachios, Ceylon cinnamon,
         toasted caraway, dry coriander, salt, salted lemons and olives. Stir
         it and roll it out flat and leave it overnight and take it up.`,
-        description: `This recipe comes from a roughly 13th century Islamic cookbook for ḥummuṣ kasā, also known as crushed chickpeas.
+        description: `This recipe comes from a roughly 13th-century Islamic cookbook for ḥummuṣ kasā, also known as crushed chickpeas.
         It is unclear where in the Middle East this cookbook was written.
         Hummus was eaten in both Syria and Egypt in the medieval Islamic age, however it's unclear where in the middle east it began.
         This recipe includes chickpeas, tahineh (tahini), olives, oil, and salt, which are the basics of many modern hummus recipes.
@@ -112,8 +112,8 @@ export const pinData: Pin[] = [
         out and bake under a crock.`,
         description: `This is the oldest recipe on this site. 
         It comes from an ancient Roman text that covers various topics surrounding agriculture.
-        This recipe is very simple, however it shows how prevalent bread has been throughout history.
-        It is unclear what "meal" refers to, however it likely refers to ground grain such as wheat or barley.
+        This recipe is very simple, however, it shows how prevalent bread has been throughout history.
+        The "meal" likely refers to some type of ground grain such as wheat or barley.
         Most modern bread recipes include other ingredients such as salt, sugar, or yeast.
         However, the basics of modern recipes involve this same basic process of kneading water with some type of grain meal.`,
         sources: [
@@ -193,7 +193,7 @@ export const pinData: Pin[] = [
           move the casserole over embers, far away from the fire, stirring
           continuously with the spoon to prevent burning. It should boil for
           about half a hour.`,
-        description: `This recipe came from an Italian recipe book known as Libro de arte coquinaria, which translates to The art of Cooking.
+        description: `This recipe came from an Italian recipe book known as Libro de arte coquinaria, which translates to The Art of Cooking.
         This book contained several recipes that used almond milk and one with hemp seed milk.
         This shows that alternative milks have been used in cooking for hundreds of years, even with the access of traditional dairy milks.
         This recipe is similar to modern recipes, however it doesn't contain spices like cinnamon or any other toppings such as nuts or berries.`,
@@ -232,7 +232,7 @@ export const pinData: Pin[] = [
           meal of it.`,
         description: `This recipe (or rather a combination of two slightly different recipes) came from William Dampier.
         Dampier was an English explorer.
-        He recorded information about how people in the Panama Bay used avocados, which became the first guacamole recipe in English.
+        He recorded information about how people in Panama Bay used avocados, which became the first guacamole recipe in English.
         The standard lime used in guacamole originated in Asia.
         It was brought over to Central America by the Spanish. 
         It later became a staple in guacamole.
@@ -278,7 +278,7 @@ export const pinData: Pin[] = [
         Peanuts (also known as groundnuts) are originally from South America, likely Bolivia.
         At some point, the Spanish brought peanuts to various places, including West Africa.
         From there, peanuts became a staple in West African cooking, including in soup.
-        Places in South America, as well as the US south developed their own versions of peanut soup.`,
+        Places in South America, as well as the US South, developed their own versions of peanut soup.`,
         sources: [
           {
             title: "Practical West African Cookery",
@@ -338,7 +338,7 @@ export const pinData: Pin[] = [
           and set it in the oven tother half hour and scrap hard shugar over it
           and so serve it.`,
         description: `This is an Irish recipe for a potato pie from a cookbook from 1700.
-        Overtime, potato pies declined in popularity, making potato puddings more popular.
+        Over time, potato pies declined in popularity, making potato puddings more popular.
         In addition, the recipes used increasingly streamlined ingredients, opting to remove ingredients like rose water and candied oring (orange).
         Modern versions also include ingredients like bacon and chives mixed in with the potatoes.`,
         sources: [
