@@ -266,8 +266,7 @@ export const pinData: Pin[] = [
       content: {
         recipe: `1 pint of stock. 2 teaspoon salt. 1 teacup ground nut. pinch pepper.
           Any stock from fowl or button broth or beef soup or even water left
-          from vegetable soup can be used for a ground nut soup, or some stock
-          made quickly with Lemeo or Maggi. Roast and peel the ground nuts
+          from vegetable soup can be used for a ground nut soup. Roast and peel the ground nuts
           and pound them to & paste in a native mortar if you have no proper
           kitchen one, mix them with a teacup of water. This makes a paste that
           you mix with the hot stock and let it boil for a quarter of an hour.
