@@ -133,7 +133,7 @@ export const pinData: Pin[] = [
     id: "4",
     position: [35.52965, -79.137941],
     data: {
-      title: "Kanuchi",
+      title: "Kanuchi (Hickory Nut Soup)",
       year: "1950",
       location: "North Carolina",
       ingredients: ["hickory nuts", "scalybarks", "water", "bread", "dumpling"],

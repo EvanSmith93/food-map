@@ -78,8 +78,12 @@ const DetailModal = ({
           ))}
         </Flex>
 
+        <Title order={3}>Recipe</Title>
         <Blockquote>{openedPin?.data.content.recipe}</Blockquote>
+
+        <Title order={3}>Description</Title>
         <Text>{openedPin?.data.content.description}</Text>
+
         <SourcesList sources={openedPin?.data.content.sources ?? []} />
 
         <Divider />
