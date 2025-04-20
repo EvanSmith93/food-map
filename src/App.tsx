@@ -10,7 +10,7 @@ import {
 } from "@mantine/core";
 import "./App.css";
 import WorldMap from "./WorldMap";
-import logo from "../public/logo.png";
+import logo from "/logo.png";
 
 function App() {
   const theme = createTheme({});
