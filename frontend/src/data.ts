@@ -338,8 +338,20 @@ export const pinData: Pin[] = [
           shugar stirring them together they bee thick then putt it into the pie
           and set it in the oven tother half hour and scrap hard shugar over it
           and so serve it.`,
-        description: "TODO: write",
-        sources: [],
+        description: `This is an Irish recipe for a potato pie from a cookbook from 1700.
+        Overtime, potato pies declined in popularity, making potato puddings more popular.
+        In addition, the recipes used increasingly streamlined ingredients, opting to remove ingredients like rose water and candied oring (orange).
+        Modern versions also include ingredients like bacon and chives mixed in with the potatoes.`,
+        sources: [
+          {
+            title: "Food and culinary cultures in pre-Famine Ireland",
+            url: "https://www.jstor.org/stable/10.3318/priac.2015.115.10",
+          },
+          {
+            title: "Irish Potato Pie",
+            url: "https://www.aspicyperspective.com/irish-potato-pie/",
+          },
+        ],
       },
     },
   },
