@@ -80,11 +80,13 @@ export const pinData: Pin[] = [
         at a time and beat it. Boil and season to taste. The broth is ninuki,
         or possibly taremiso. Garnish with black pepper and ume.`,
         description: `This recipe for udon noodles comes from an early Japanese recipe book.
-        Udon noodles are thick and chewy and have spread across the world.
         For context, 1 shō is roughly 0.5 gallons.
+        I found it interesting that this recipe mentions the seasons and the wind in the recipe, which no other recipe I found does.
+        Whoever wrote this recipe had an understanding that the natural world would affect their food.
         This recipe differs from more modern udon noodle recipes which typically include corn or potato starch to prevent sticking.
-        The instructions do not state what Ninuki is, which is not a common ingredient today.
-        Otherwise, these Udon noodles are similar to modern noodles in many ways.`,
+        In addition, it contains taremiso (miso sauce) and ume (Japanese plum), both of which are not typically used in modern Udon noodles.
+        Ninuki is also mentioned, which is not a generally known ingredient today.
+        While the concept of Udon noodles themselves have stayed fairly constant, the ingredients used with it have changed.`,
         sources: [
           {
             title: "Ryori Monogatari",
