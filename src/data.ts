@@ -273,10 +273,10 @@ export const pinData: Pin[] = [
           Serve with little squares of fried bread.`,
         description: `This recipe comes from a 1910 book written by two Europeans about West African food.
         I searched extensively for a recipe that would be more historically accurate.
-        However, this was the closest one I could find.
+        I could not find one, which is makes sense considering many African cultures did not have a written tradition.
         Most of the records I found were from Europeans commenting on West African food, rather than from West Africans directly.
         Peanuts (also known as groundnuts) are originally from South America, likely Bolivia.
-        At some point, the Spanish brought peanuts to various places, including West Africa.
+        During the colonial period, the Spanish brought peanuts to various places, including West Africa.
         From there, peanuts became a staple in West African cooking, including in soup.
         Places in South America, as well as the US South, developed their own versions of peanut soup.`,
         sources: [
